@@ -9,5 +9,6 @@ package project;
  * @author Maashes
  */
 public class Weapon {
+	private double candleStick;
     
 }
