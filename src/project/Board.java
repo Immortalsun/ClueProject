@@ -17,31 +17,28 @@ public class Board {
 	
 		//starting probabilities	
 		Weapon w = new Weapon();
-                Suspect s = new Suspect();
-                Room r = new Room();
-<<<<<<< HEAD
-=======
-                String bodyLoc;
->>>>>>> Restrictions added.
+        Suspect s = new Suspect();
+        Room r = new Room();
+
+         String bodyLoc;
+
 		
 		ArrayList<String> deck = new ArrayList(); 
-                deck.add("Dagger");//0
-                deck.add("Rope");
-<<<<<<< HEAD
-                deck.add("Lead Pipe");
-                deck.add("Candle Stick");
-                deck.add("Revovler");
-                deck.add("Wrench");//5
-                deck.add("Col. Mustard");//6
-                deck.add("Prof. Plum");
-=======
-                deck.add("Lead Pipe"); //2
-                deck.add("Candlestick"); //3
+        deck.add("Dagger");//0
+        deck.add("Rope");
+        deck.add("Lead Pipe");
+        deck.add("Candle Stick");
+        deck.add("Revovler");
+        deck.add("Wrench");//5
+        deck.add("Col. Mustard");//6
+        deck.add("Prof. Plum");
+				deck.add("Lead Pipe"); //2
+				deck.add("Candlestick"); //3
                 deck.add("Revovler");
                 deck.add("Wrench");//5
                 deck.add("Col.Mustard");//6
                 deck.add("Prof.Plum");
->>>>>>> Restrictions added.
+
                 deck.add("Miss Scarlett");
                 deck.add("Mr.Green");
                 deck.add("Mrs.Peacock");
@@ -59,24 +56,24 @@ public class Board {
                 //create solution
                 Random rand = new Random();
                 Player solution = new Player("","","");
-<<<<<<< HEAD
+
                 //weapon
                 int index = rand.nextInt(6);
                 String temp1 = deck.get(index);
                 solution.setCard1(deck.get(index));               
-=======
+
                 
                 //room
                 int index=rand.nextInt(9)+12;
                 String temp3 = deck.get(index);
                 solution.setCard3(deck.get(index));
                 
->>>>>>> Restrictions added.
+
                 //suspect
                 index=rand.nextInt(6)+6;
                 String temp2 = deck.get(index);
                 solution.setCard2(deck.get(index));
-<<<<<<< HEAD
+
                 //room
                 index=rand.nextInt(9)+12;
                 String temp3 = deck.get(index);
@@ -84,8 +81,7 @@ public class Board {
                 
                 //remove solution from deck
                 deck.remove(temp1);
-                deck.remove(temp2);
-=======
+
 
                 //weapon
                 index = rand.nextInt(6);  
@@ -231,7 +227,7 @@ public class Board {
                 //suspect
                 deck.remove(temp2);
                 //room
->>>>>>> Restrictions added.
+
                 deck.remove(temp3);
                 
 		//distrubute remaining cards
@@ -244,16 +240,15 @@ public class Board {
 		Player p5 = new Player(deck.get(12),deck.get(13),deck.get(14));
 		Player p6 = new Player(deck.get(15),deck.get(16),deck.get(17));
                 
-<<<<<<< HEAD
+
                 System.out.println("Done.");
-=======
+
                 System.out.println("Body Found in the "+bodyLoc);
                 
                 System.out.println("Solution: ");
                 System.out.println("Murderer: "+temp2);
                 System.out.println("Weapon: "+temp1);
                 System.out.println("Room: "+temp3);
->>>>>>> Restrictions added.
 			
 	}
 	
